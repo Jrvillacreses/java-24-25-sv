@@ -6,28 +6,22 @@ public class Simpson {
 
     //Software de gestión de venta ONLINE
     public static void rellenarTablero(char pers) {
-        for (int i = 0; i < 10 ; i++) {
-            for (int j = 0; j < 10 ; j++) {
-                tablero[i][j] = pers
-            }
-        }
-        public static void imprimirTablero(){
-            for (int i = 0; i < 10; i++) {
-                System.out.println();
-                for (int j = 0; j < 10; j++) {
-                    System.out.printf(tablero[i][j]);
-                }
-            }
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) tablero[i][j] = pers;
         }
     }
-    rellenarTablero('L')
-    public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
-        // int contador = 0;
-        char personaje = '#'
-        rellenarTablero(personaje);
-        // contador = 10;
-        rellenarTablero(personaje);
 
+    public static void imprimirTablero() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println();
+            for (int j = 0; j < 10; j++)
+                System.out.print(tablero[i][j]);
+        }
+    }
+    //Rellenar el tablero
+    public static void main(String[] args) {
+        char personaje = 'x';
+        rellenarTablero(personaje);
+        imprimirTablero();
     }
 }
