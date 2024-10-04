@@ -11,7 +11,14 @@ public class Simpson {
                 tablero[i][j] = pers
             }
         }
-        tablero[][]
+        public static void imprimirTablero(){
+            for (int i = 0; i < 10; i++) {
+                System.out.println();
+                for (int j = 0; j < 10; j++) {
+                    System.out.printf(tablero[i][j]);
+                }
+            }
+        }
     }
     rellenarTablero('L')
     public static void main(String[] args) {
