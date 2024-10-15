@@ -67,7 +67,7 @@ public class JuegoSimpsonFinal {
             System.out.println("A--> Izquierda, S--> Abajo, D--> Derecha, W--> Arriba");
             String desplazamiento = lector.nextLine().toUpperCase(); // conversión a mayúsculas
             System.out.println("Desplazamiento=" + desplazamiento);
-
+            //Desplazamiento general , no interacciones
             switch(desplazamiento) {
                 case "A": // Izquierda
                     if ((columnaBart - 1) >= 0) {
@@ -104,7 +104,7 @@ public class JuegoSimpsonFinal {
             imprimirTablero();
         } while (vidas > 0);
     }
-
+    // Interacciones de movimiento con variable propia
     private static void moverBart(int nuevaFila, int nuevaColumna) {
         switch (tablero[nuevaFila][nuevaColumna]) {
             case "[H]":
@@ -122,6 +122,7 @@ public class JuegoSimpsonFinal {
                 System.out.println("¡Has llegado a la meta! Fin del juego.");
                 System.exit(0);
         }
+        //Declaracion para cambios de casilla al movernos
         tablero[filaBart][columnaBart] = "[ ]"; // Casilla anterior de Bart
         tablero[nuevaFila][nuevaColumna] = "[B]"; // Nueva posición de Bart
         filaBart = nuevaFila;
