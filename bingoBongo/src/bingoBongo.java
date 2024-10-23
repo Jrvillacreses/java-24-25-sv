@@ -166,7 +166,7 @@ public class bingoBongo {
             }
         }
 
-        // Crear un nuevo arreglo con los números acertados sin ceros adicionales
+        // Crear un nuevo array con los números acertados sin ceros adicionales
         int[] numerosAciertosFinales = new int[aciertos];
         for (int i = 0; i < aciertos; i++) {
             numerosAciertosFinales[i] = numerosAciertos[i];
@@ -176,6 +176,7 @@ public class bingoBongo {
         System.out.println("Cantidad de aciertos: " + aciertos);
         System.out.println("Cartón de Aciertos:");
         imprimirCartonAciertos(carton, numerosAciertosFinales);
+
     }
 }
 
