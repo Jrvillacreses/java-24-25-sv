@@ -8,12 +8,12 @@ public class Main {
         blckNum = askBlock.nextInt();
     }
     private static void calculateFloor(int numBloques){
-        int longitud=1;
+        int longi =1;
         int blocksCount =0;
         int floorNum =0;
         do {
-            blocksCount = blocksCount + longitud*longitud;
-            longitud = longitud+2;
+            blocksCount = blocksCount + longi*longi;
+            longi = longi+2;
             floorNum++;
         } while (numBloques> blocksCount);
         if (numBloques == 0){
