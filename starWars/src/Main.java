@@ -43,7 +43,7 @@ public class Main {
         }
         System.out.println("");
     }
-    public static void movimiento(Scanner scanner, String tablero[][], String )
+
 
     public static void main(String[] args) {
         tableroYoda = new String[MAX_FILA_TABLERO][MAX_COLUMNA_TABLERO];
