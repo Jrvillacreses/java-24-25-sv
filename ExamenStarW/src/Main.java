@@ -77,9 +77,10 @@ public class Main {
             }
         }
     }
+    
     static void comprobarCasillaAnterior(){
+    }
 
-}
     public static void main(String[] args) {
         rellenarTablero(tableroYoda);
         rellenarTablero(tableroVader);
