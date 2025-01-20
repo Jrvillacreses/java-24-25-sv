@@ -1,11 +1,12 @@
 import pojo.Lavadora;
 
+
 public class Main {
     public static void main(String[] args) {
         // Crear lavadoras
-        Lavadora lavadora1 = new Lavadora(10, "Rápido");
-        Lavadora lavadora2 = new Lavadora(8, "Ecológico");
-        Lavadora lavadora3 = new Lavadora(10, "Rápido");
+        Lavadora lavadora1 = new Lavadora("Lavadora 1", 10, "Rápido");
+        Lavadora lavadora2 = new Lavadora("Lavadora 2", 8, "Ecológico");
+        Lavadora lavadora3 = new Lavadora("Lavadora 3", 10, "Rápido");
 
         // Abrir puertas de las tres lavadoras
         lavadora1.abrirPuerta();
@@ -29,7 +30,5 @@ public class Main {
         lavadora1.iniciarLavado();
         lavadora3.iniciarLavado();
 
-        // Intentar abrir la puerta de la lavadora 1 mientras está funcionando
-        lavadora1.abrirPuerta();
     }
 }
